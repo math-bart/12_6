@@ -16,7 +16,7 @@ function getCountry(input) {
     var trace = $('<tr>').addClass('main').appendTo(table);
     var flag = $('<td>').addClass('flag').appendTo(trace);
 	var countryCode = item.alpha2Code.toLowerCase();
-	$('<img>').attr('src', 'http://www.geonames.org/flags/x/' + countryCode + '.gif').appendTo(flag);
+	$('<img>').attr('src', 'http://www.geonames.org/flags/x/' + countryCode + '.gif' ).appendTo(flag);
 	$('<td>').text(item.name).addClass('name').appendTo(trace);
 			
     $('<tr>').appendTo(table);

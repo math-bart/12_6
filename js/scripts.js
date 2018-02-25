@@ -15,24 +15,24 @@ function getCountry(input) {
     var table = $('<table>').addClass('country').appendTo(countriesList);
     var trace = $('<tr>').addClass('main').appendTo(table);
     var flag = $('<td>').addClass('flag').appendTo(trace);
-	var countryCode = item.alpha2Code.toLowerCase();
-	$('<img>').attr('src', 'http://www.geonames.org/flags/x/' + countryCode + '.gif' ).appendTo(flag);
-	$('<td>').text(item.name).addClass('name').appendTo(trace);
+    var countryCode = item.alpha2Code.toLowerCase();
+    $('<img>').attr('src', 'http://www.geonames.org/flags/x/' + countryCode + '.gif' ).appendTo(flag);
+    $('<td>').text(item.name).addClass('name').appendTo(trace);
 			
     $('<tr>').appendTo(table);
-	$('<td colspan="2">').text('Background information').addClass('border').appendTo(table);
+    $('<td colspan="2">').text('Background information').addClass('border').appendTo(table);
 			
     var trace = $('<tr>').addClass('countryTrace').appendTo(table);
-	$('<td>').text('area').appendTo(trace);
-	$('<td>').text(item.area).appendTo(trace);
+    $('<td>').text('area').appendTo(trace);
+    $('<td>').text(item.area).appendTo(trace);
 			
     var trace = $('<tr>').addClass('countryTrace').appendTo(table);
     $('<td>').text('capital').appendTo(trace);
-	$('<td>').text(item.capital).appendTo(trace);
+    $('<td>').text(item.capital).appendTo(trace);
 			
     var trace = $('<tr>').addClass('countryTrace').appendTo(table);
     $('<td>').text('population').appendTo(trace);
-	$('<td>').text(item.population).appendTo(trace);
+    $('<td>').text(item.population).appendTo(trace);
 			
     var trace = $('<tr>').addClass('countryTrace').appendTo(table);
     $('<td>').text('language(s)').appendTo(trace);

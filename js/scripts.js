@@ -46,3 +46,5 @@ function getCountry(input) {
     $('<td colspan="2">').addClass('border').appendTo(table);
   });
 }
+
+searchCountries();
